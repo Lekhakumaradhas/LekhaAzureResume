@@ -2,6 +2,7 @@ module.exports = async function (context, req, counter) {
     if (!counter) {
         context.log("Counter not found");
     }
+/* Check if the method is POST */    
     else {
         if (req.method == 'POST') {
             counter.count = counter.count + 1;
